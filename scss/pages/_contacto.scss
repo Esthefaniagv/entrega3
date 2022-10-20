@@ -1,0 +1,74 @@
+/* Seccion mobile contacto */
+.main__principal {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  &__contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+  }
+  &__contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  &__contact__img img {
+    display: none;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  &__paragraph {
+    font-size: 15px;
+    font-weight: 400;
+    color: #777776;
+  }
+}
+
+
+
+@media(min-width: 992px) {
+  .main__principal {
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    &__contact__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 80%;
+      width: 90%;
+      justify-content: center;
+      padding-top: 55px;
+    }
+    &__contact__wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 50%;
+      height: 420px;
+      justify-content: center;
+    }
+    &__contact__img img {
+      display: flex;
+      width: auto;
+    }
+    &_title {
+      font-size: 60px;
+      font-weight: 700;
+    }
+    &__paragraph {
+      font-size: 20px;
+      font-weight: 400;
+      color: #777776;
+    }
+  }
+} 
