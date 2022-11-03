@@ -31,43 +31,11 @@
   color: #fdc72d;
 }
 
-.company__principles {
-  width: 100vw;
-  height: 800px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  padding: 0 15px;
-  &__title {
-    font-weight: 700;
-    font-size: 30px;
-    color: #000000;
-  }
-  &__list li {
-    font-weight: 400;
-    font-size: 15px;
-    color: #777776;
-  }
-}
-
-.company__wrapper {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  border: #fdc72d solid;
-  height: 345px;
-}
-
-
-.worker__delivery {
-  height: 400px;
-}
-
 @media (min-width: 992px) {
   .header__content {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 350px;
     padding: 0 15px;
     justify-content: center;
     &__container {
@@ -91,40 +59,58 @@
     }
   }
 
-
   .highlight__title {
     color: #fdc72d;
   }
 
-  .company__principles {
+  .our__profile {
     width: 100vw;
-    height: 800px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    padding: 0 15px;
-    &__title {
-      font-weight: 700;
-      font-size: 30px;
-      color: #000000;
+    height: 350px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 80%;
     }
-    &__list li {
-      font-weight: 400;
-      font-size: 15px;
+    &__paragraph {
+      font-weight: 600;
+      font-size: 20px;
       color: #777776;
     }
   }
 
-  .company__wrapper {
+  .big__gallery{
     display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    border: #fdc72d solid;
-    height: 345px;
   }
-
-
-  .worker__delivery {
-    height: 400px;
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,180px);
+    grid-gap: 3px;
+    width: 80%;
   }
-}
+  
+  .gallery__item {
+    &:first-child {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 4
+    }
+    
+    &:nth-child(2) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    &:nth-child(5) {
+      grid-column: 4;
+      grid-row: 3 / span 2;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  }
